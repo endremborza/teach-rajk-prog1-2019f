@@ -42,7 +42,7 @@ ha van olyan szám amire ki lehetne cserélni valamelyiket
 a két szám közül, úgy hogy a predikátum igazságértéke 
 változatlan maradjon, számolja ki a program ezt a számot.
 
-a házi második felét privátban (nekem és Bencének) küldjétek vasárnap éjfélig
+a házi második felét privátban (nekem és Bencének) küldjétek **szombat éjfélig**
 
 ## Plusz
 
