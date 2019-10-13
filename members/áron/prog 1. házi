@@ -1,0 +1,59 @@
+1: harmadfokú egyenletet megoldása
+Állapottér: {a,b,c,d,x_(1,) x_2,x_3  ∈ R,}
+Előfeltétel: {a≠0}
+Utófeltétel:
+ { (A=(27a^2 c-9ab^2)/(27a^3 )  Λ (2b^3-9abc^(+27) a^2 d)/(27a^3 ) Λ Δ=(B/2)^2+(A/3)^2 )Λ(Δ≧0  ⟨=⟩  x_1=x_2=x_3=  -b/3a+∛(-B/2+√Δ)   + ∛(-B/2-√Δ)   )Λ ( x_1=-b/3a+2√(-A/3)  cos⁡(1/3 arccos┤ ((-B⁄2)/√((-A⁄3)^2 ))  Λ   x_2=-b/3a+2√(-A/3)  cos⁡(2π/3+1/3 arccos┤ ((-B⁄2)/√((-A⁄3)^2 ))  Λ   x_3=-b/3a-2√(-A/3)  cos⁡(2π/3+1/3 arccos┤ ((-B⁄2)/√((-A⁄3)^2 ))}
+
+2: egy tíz számból álló tömbben ha van páros, számoljuk ki a 10 szám szorzatát, ha nincs közte páros szám, adjuk meg a legkisebb számot (itt baromira nem egyértelműek a jelölések, kérdezzetek, kísérletezzetek és majd következő háziig tisztázunk mindent)
+Állapottér: {a,b,c,d,e,f,g,h,i,j,k ∈ R }
+Előfeltétel: 
+Utófeltétel: 
+{ a/2∈Z ∨b/2∈Z ∨c/2∈Z ∨d/2∈Z ∨ e/2∈Z ∨ f/2∈Z ∨ g/2∈Z ∨ h/2∈Z ∨i/2∈Z ∨j/2∈Z }=Igaz
+→k=abcdefghij)  Λ 
+ {a/2∈Z ∨b/2∈Z ∨c/2∈Z ∨d/2∈Z ∨ e/2∈Z ∨ f/2∈Z ∨ g/2∈Z ∨ h/2∈Z ∨i/2∈Z ∨j/2∈Z  }=Hamis→
+(k ∈{a,b,c,d,e,f,g,h,i,j,} Λ ( (k<a Λ k<b Λ k<c Λ k<d Λ k<e Λ k<f Λ k<g Λ k<h Λ k<i ) ∨ 
+(k<a Λ k<b Λ k<c Λ k<d Λ k<e Λ k<f Λ k<g Λ k<h Λ k<j) ∨ 
+(k<a Λ k<b Λ k<c Λ k<d Λ k<e Λ k<f Λ k<g Λ k<i Λ k<j) ∨ 
+(k<a Λ k<b Λ k<c Λ k<d Λ k<e Λ k<g  Λ k<h Λ k<i Λ k<j) ∨ 
+(k<a Λ k<b Λ k<c Λ k<d Λ k<f Λ k<g Λ k<h Λ k<i Λ k<j) ∨ 
+(k<a Λ k<b Λ k<c Λ k<e Λ k<f Λ k Λ k<g <h Λ k<i Λ k<j) ∨ 
+(k<a Λ k<b Λ k<d Λ k<e Λ k<f Λ k<g Λ k<h Λ k<i Λ k<j) ∨ 
+(k<a Λ k<c Λ k<d Λ k<e Λ k<f Λ k<g Λ k<h Λ k<i Λ k<j) ∨  
+(k<b Λ k<c Λ k<d Λ k<e Λ k<f Λ k<g Λ k<h Λ k<i Λ k<j) )
+
+3: két természetes szám legkisebb közös többszörösének megtalálása
+Állapottér: {a,b,c,x,y,g,n ∈R,}
+Előfeltétel: {a ≠b; x,y∈ N}
+Utófeltétel: g∈ {xa=yb }  Λ ∄n(n ∈{xa=yb }  Λ n<g) 
+
+
+4: két számhoz keresünk egyet ami a két szám összege és különbsége között van
+Állapottér: {a,b,c ∈R }
+Előfeltétel: {a ≠b}
+Utófeltétel: {|a-b|<c<a+b}
+
+ 
+5-6: válassz ki a többiek által felküldött 35 probléma közül 2-t és írj hozzá specifikációt
+[Danka]: Kíváncsi vagyok a Jeszk-moments chatben 10 leggyakrabban előforduló szóra, de úgy, hogy a töltelékszavakat (kötőszavak, névelők) ne számolja bele, csak a valódi tartalommal rendelkezőket.
+Állapottér: Jeszk moments chatben előforduló összes szó
+Előfeltétel: A szavak nem lehetnek elemei a kötőszavakat, névelőket tartalmaző halmazznak
+Utófeltétel: A szavak a gyarkoriság szerinti sorrendben legfejlebb tizedikek
+[Matos]: 4. Adott egy háromelemű halmaz, ami vállalat (1) adott évi eredményét, (2) saját tőkéjét és a (3) saját tőke elvárt hozamát tartalmazza.
+Saját tőkén elért hozam = eredmény/saját tőke  = (1)/(2)
+
+A program adjon 1-et, ha a saját tőkén elért hozam nagyobb (vagy egyenlő), mint a saját tőke elvárt hozama és 0-t, ha kisebb. 
+
+A – adott évi eredmény, B- Saját tőke, C – Saját tőkén elvárt hozam
+
+Állapottér: {a,b,c ∈R,output ∈ {0;1}}
+
+Előfeltétel: -
+
+Utófeltétel: a/b  ≧c→output=1 Λ   a/b  <c→output=0 
++nehéz feladat:
+adott egy tetszőleges predikátum, ami egy logikai értéket számol ki két természetes számból és adott hozzá két természetes szám, amire ki lehet számolni. ha van olyan szám amire ki lehetne cserélni valamelyiket a két szám közül, úgy hogy a predikátum igazságértéke változatlan maradjon, számolja ki a program ezt a számot.
+
+Állapottér: {a,b,c  ∈ N}
+Előfeltétel: -
+Utófeltétel: (a-b>0) = X logikai érték ( (a-c>0) = X logikai érték) V (c-b>0) = X logikai érték)
+
