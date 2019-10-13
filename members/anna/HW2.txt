@@ -1,0 +1,42 @@
+Augusztin Anna – 2.spec házi
+
+Párosítás
+1)	 C 
+(amúgy a és b valszeg egyenlő lesz c,d-vel, ha csak 1 relatív prím pár van a halmazban)
+
+2)	D 
+Javítás: 𝑎,𝑏,𝑐∈ℝ+
+
+3)	G 
+Javítás1: EF: 𝑡∈ℕ𝑛, 𝑥∈ℕ, 0 nem eleme t)
+Javítás2: Számoljunk ki egy tömböt amiben szerepel egy adott szám minden pozitív egész osztója
+
+
+4)	F
+Javítás:  A (𝑎,𝑏,𝑥, y∈ℕ, a,b nem lehet 0)
+
+5)	B
+6)	I
+Javítás: Állapítsd meg hogy "a" oldalszámú konvex sokszögnek hány darab átlója van!
+
+7)	E
+
+
+Kiegészítés:
+
+8)	Szöveg: Határozza meg két pozitív valós szám négyzetének összegének négyzetgyökét a pozitív valós számok halmazán.
+
+Specifikáció
+
+A  
+Válassza ki a megadott számok közül a legnagyobbat
+A: (x∈ℝn,, y∈ℝ)
+EF: (y∈x, ∧  x∈x’)
+UF: (Ef ∧ ∄𝑘(𝑘∈x∧𝑘>y)))
+
+H
+Adott egy tömb, amihez számoljunk ki egy olyan tömböt, amiben az eredeti tömbben szereplő négyzetszámok gyöke szerepel, a nem négyzetszámok pedig önmaguk
+A: (𝑡∈Rn , x∈Rm,,  b ∈ N+)
+Ef: (n=m)
+U: Ef ∧ (x𝑖∈x) ⇔ (∃a(a∈t ∧ a^(1/2)= b ∧ a=xi^2) v (a∈t ∧ a=xi) )
+
