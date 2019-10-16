@@ -1,8 +1,0 @@
-Most Neumann díjas bedobásnál is volt ilyen példa, de korábban a saját Neumann díjas jelöltem is hasonlót csinált, 
-szóval proghoz kapcsolódóan ez érdekel eléggé.
-Az van, hogy sok közgazdaságtani meg policy paperben használnak google earth-öt vagy műholdfelvételeket arra, hogy pontos adatot kapjanak 
-urbanizációra / gazdasági fejlettségre / áthaladó forgalomra / olyan dolgokra amik vagy torzítottan vagy nagyon nehezen mérhetők.
-És az érdekel, hogy hogyan lehet olyan programot írni a gyakorlatban, ami képes értelmezni kvázi térképeket, fénykiterjedés kiterjedtségét,
-megkülönböztetni autókat egy műholdképen és mindezt naprakész adattá átalakítani.
-Ez nehéz? Mennyire kell rátanítani a programomat erre? Mekkora a hibafaktor?
-Én ezt meg tudnám csinálni?
