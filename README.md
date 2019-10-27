@@ -8,6 +8,7 @@
 - [for course 4](material/transitions/into_course_04.md)
 - [for course 5](material/transitions/into_course_05.md)
 - [for course 6](material/transitions/into_course_06.md)
+- [for course 7](material/transitions/into_course_07.md)
 
 ### other
 
