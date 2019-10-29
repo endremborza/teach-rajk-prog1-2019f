@@ -1,4 +1,4 @@
-1 es specifikáció – C leírás
+﻿1 es specifikáció – C leírás
 
 2 es specifikáció – D leírás
 
@@ -19,3 +19,6 @@
  
 
 H - Adott egy tömb, amihez számoljunk ki egy olyan tömböt amiben az eredeti tömbben szereplő négyzetszámok gyöke szerepel, a nem négyzetszámok pedig önmaguk
+
+#Hibátlan párosítás, ügyes! :)
+#A H specifikációját tartalmazó képet, nekem nem akarja betölteni az email-nél, ha elküldöd újr akkor azt is javítom.
