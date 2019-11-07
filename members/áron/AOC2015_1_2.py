@@ -8,8 +8,8 @@ with open('AOC2015_1.txt') as fp:
     aoc_map = fp.read()
 
 
-def split(word): 
-    return [char for char in word] 
+def split(word):
+    return [char for char in word]
 
 word=aoc_map
 
@@ -25,13 +25,9 @@ for x in split(word):
         c=c+1
         if b == -1:
             break
-           
-print (c)
-    
 
+print (c)
+
+#Szep megoldasok! :) 
 
 # In[ ]:
-
-
-
-
