@@ -11,7 +11,4 @@ for i in t2[:-1]:
 
 
 print(a)
-
-
-
-
+#Jo megoldas!
