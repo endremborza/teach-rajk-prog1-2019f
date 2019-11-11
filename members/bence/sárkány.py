@@ -2,7 +2,7 @@
 # coding: utf-8
 
 # In[1]:
-
+#Az ekezetek hasznalatat jobb elkerulni fajlnevek adasakor.
 
 cow_alive_list_test_1=[False, False, True, True, True]
 
@@ -13,7 +13,7 @@ cow_alive_list_test_1=[False, False, True, True, True]
 def my_solution2(cow_alive_list):
     fat_alive_cow_index=0
     thin_alive_cow_index=len(cow_alive_list)-1
-    
+
     while (fat_alive_cow_index+1) < thin_alive_cow_index:
         middle_cow = int((fat_alive_cow_index +
                           thin_alive_cow_index)/2)
@@ -21,7 +21,7 @@ def my_solution2(cow_alive_list):
             thin_alive_cow_index=middle_cow
         else:
             fat_alive_cow_index=middle_cow
-            
+
     return thin_alive_cow_index+1
 
 
@@ -67,7 +67,7 @@ from jkg_evaluators import dragonfind_10_to_500
 def my_solution2(is_dead, number_of_cows):
     fat_alive_cow_index=0
     thin_alive_cow_index=number_of_cows
-    
+
     while (fat_alive_cow_index+1) < thin_alive_cow_index:
         middle_cow = int((fat_alive_cow_index +
                           thin_alive_cow_index)/2)
@@ -75,7 +75,7 @@ def my_solution2(is_dead, number_of_cows):
             thin_alive_cow_index=middle_cow
         else:
             fat_alive_cow_index=middle_cow
-            
+
     return middle_cow
 
 
@@ -86,7 +86,3 @@ dragonfind_10_to_500.evaluate(my_solution2)
 
 
 # In[ ]:
-
-
-
-
