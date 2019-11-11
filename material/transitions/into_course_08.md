@@ -34,7 +34,3 @@ amit ebben a leírásban **tilos**:
 - összetett problémát leírni
   - pl kiválasztom a legnagyobbat, megkeresem a valamilyet...
   
-
-# II.
-
-a második részt akkor kapjátok meg, ha az első kész.
