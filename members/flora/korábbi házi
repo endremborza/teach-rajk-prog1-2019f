@@ -2,16 +2,16 @@ Első házi második fele
 Írj specifikációt, az alábbi problémák megoldására (állapottér, előfeltétel, utófeltétel):
 
 1: harmadfokú egyenletet megoldása
-Á: {a, b, c ∈ R}
-Ef: (a, b ≠ 0)
-Uf: ()
+Á: {a, b, c, d ∈ R}
+Ef: (a ≠ 0)
+Uf: (ax^3 + bx^2 + cx + d = 0)
 
 2: egy tíz számból álló tömbben ha van páros, számoljuk ki a 10 szám szorzatát, ha nincs
 közte páros szám, adjuk meg a legkisebb számot (itt baromira nem egyértelműek a
 jelölések, kérdezzetek, kísérletezzetek és majd következő háziig tisztázunk mindent)
-Á: {a, b, c, d, e, f, g, h, i, j ∈ R}
-Ef: ()
-Uf: ()
+Á: {a, b, c, d, e, f, g, h, i, j, k ∈ R}
+Ef: (k páros szám)
+Uf: (ha páros: a*b*c*d*e*f*g*h*i*j = k) (ha nem: min(a, b, c, d, e, f, g, h, i, j))
 
 3: két természetes szám legkisebb közös többszörösének megtalálása
 [a, b] = x
@@ -52,3 +52,16 @@ x. – C
 3. – G
 x. – H
 6. – I
+
+C: Egy természetes számokat tartalmazó halmazból válasszunk ki két relatív prímet (ha van)!
+Á: {a, b, c, d ∈ N}
+Ef: ()
+Uf: ()
+
+
+H: Adott egy tömb, amihez számoljunk ki egy olyan tömböt amiben az eredeti tömbben szereplő 
+négyzetszámok gyöke szerepel, a nem négyzetszámok pedig önmaguk
+Á: {}
+Ef: ()
+Uf: ()
+
