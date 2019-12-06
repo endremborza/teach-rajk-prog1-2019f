@@ -55,6 +55,6 @@ x. – H
 
 H: Adott egy tömb, amihez számoljunk ki egy olyan tömböt amiben az eredeti tömbben szereplő 
 négyzetszámok gyöke szerepel, a nem négyzetszámok pedig önmaguk
-Á: {a, b, c ∈ X} ^ {d, e, c ∈ Y}
+Á: {X ∈ N^n, Y ∈ N^n}
 Ef: ()
-Uf: ()
+Uf: /∃A(A^0.5 ∈ N ^ A ∈ X ^ A^0.5 /∈ Y) ^ /∃B(B^0.5 /∈ N ^ B ∈ X ^ B /∈ Y)
