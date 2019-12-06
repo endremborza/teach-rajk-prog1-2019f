@@ -38,14 +38,14 @@ a = sima napok
 b = bulis napok
 y = cigipakk ára
 x = elszívott cigik száma
-Á: {a, b, x, y ∈ N}
+Á: {a, b, x, y, n ∈ N}
 Ef: (a, y ≠ 0)
 Uf: (a*x + b*2x = n*y)
 
 Második házi
 8. – A
 5. – B
-x. – C
+1. – C
 2. – D
 7. – E
 4. – F
@@ -53,15 +53,8 @@ x. – C
 x. – H
 6. – I
 
-C: Egy természetes számokat tartalmazó halmazból válasszunk ki két relatív prímet (ha van)!
-Á: {a, b, c, d ∈ N}
-Ef: ()
-Uf: ()
-
-
 H: Adott egy tömb, amihez számoljunk ki egy olyan tömböt amiben az eredeti tömbben szereplő 
 négyzetszámok gyöke szerepel, a nem négyzetszámok pedig önmaguk
-Á: {}
+Á: {a, b, c ∈ X} ^ {d, e, c ∈ Y}
 Ef: ()
 Uf: ()
-
