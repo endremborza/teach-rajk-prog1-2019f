@@ -1,0 +1,8 @@
+Ezt csinálja a függvényem:
+1. az inputként kapott listát a beépített sorba rendező függvénnyel kezelésbe veszi (növekvő), ebből csinál egy új változót (listát).
+2. az új változó nulladik és első elemét összeszorozza, ebből csinál egy újabb változót (integer).
+3. az inputként kapott listát a beépített sorba rendező függvénnyel fordítva is sorba rendezi (csökkenő), ebből csinál egy másik új változót (listát).
+4. ennek a nulladik és első elemét is összeszorozza, csinál egy új változót neki (integer).
+5. a második és negyedik lépésben létrehozott változók értékeit egy listába rakja.
+6. az ötödik lépésben létrehozott lista elemeit a beépített sorbarendező függvénnyel fordított (csökkenő) sorrendbe rakja.
+7. visszaadja a hatodik lépésben kapott lista nulladik elemét.
