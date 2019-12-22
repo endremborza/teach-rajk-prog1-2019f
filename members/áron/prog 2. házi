@@ -1,0 +1,26 @@
+2. házi
+1 – C
+2 – D
+3 – G
+De ez hibás, mivel nem köti ki, hogy az összes lehetséges egész osztója benne legyen a t tömbben, csupán azt, hogy van olyan egész osztója, ami bent van t tömbben. Helyesen így nézne ki:
+Uf: (𝐸𝑓∧(𝑥/𝑡𝑖∈ℕ∧𝑡𝑖∈ℕ)⇔(𝑡𝑖∈𝑡) ∧ ∄ b𝑖 (𝑥/b𝑖∈ℕ∧b𝑖∈ℕ∧ b𝑖∈ ∉t)
+
+4 – F
+5 – B 
+6 – I 
+7 – E
+Itt hibás az utófeltétel, mivel nincs leírva, hogy a p páros-e, csupán a p/2 meg van adva mindenféle kontextus nélkül. Helyes formában így nézne ki:
+
+Uf: ( (𝐸𝑓∧∃𝑝(𝑝∈𝑣∧(𝑝/2∈ℕ))⇒(𝑏=∏𝑡∈𝑣𝑡) ) ∧  ∄𝑝(𝑝∈𝑣∧(𝑝/2∈ℕ))⇒(𝑏∈𝑣∧∄𝑘(𝑘∈𝑣∧𝑘<𝑏)))
+
+8 – A 
+9 – Egy derékszögű háromszög két befogóját megadva megkapjuk az átfogójának hosszát.
+
+Kimaradt: 
+H
+Adott egy tömb, amihez számoljunk ki egy olyan tömböt amiben az eredeti tömbben szereplő négyzetszámok gyöke szerepel, a nem négyzetszámok pedig önmaguk
+
+A: (v∈R^n;x ∈R^n)
+Ef: (v=v′ ∧ a ∈ ℕ+)
+Uf: (E_f∧a∈x∧b∈x ⇔ (a^2∈v)  Λ (b∈v) )
+

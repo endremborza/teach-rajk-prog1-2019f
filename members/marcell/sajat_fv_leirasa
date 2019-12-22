@@ -1,0 +1,13 @@
+az én függvényemnek két paramétere van, egy string és egy lista. A paraméter lista elemei különböző hosszúságú stringekből és interegekből állnak, akár vegyesen is.
+
+A függvény meghívás után deklarál egy character_counter nevű üres listát.
+Ezután elindít egy for ciklust a paraméterként kapott lista elemein.
+Itt minden iterációnál deklarálja (majd a későbbi ciklusokban csak értéket ad) a letter_counter nevű integer típusú változót 0 értékkel.
+Itt a cikluson belül be van ágyazva egy második for ciklus, amelyik az első for ciklusban kiválasztott elemét - a paraméterként megadott listának - iterálja végig.
+A második for ciklus magja egy elágazás, amelyik abban az esetben, ha a végig iterált elem egyik karaktere megegyezik a függvénynek a második parametereként megadott karakterrel, akkor igazzá válik, s ezen belül a letter_counter nevű változónak egy értékadáson keresztül 1-gyel megnöveli az értékét.
+Amint lefutott a belső (második) ciklus, a függvény megcseréli a vizsgált elem összes string típusú változójának a méretét (amennyiben eddig kisbetű volt, akkor naggyá írja át, amennyiben nagy volt, akkor kicsivé).
+Ezután lefuttatja a fent leírt belső iterációt is a megváltozott elemen.
+A két darab ciklus lefutása után a függvény hozzáadja a letter_counter változó aktuális értékét a character_counter lista végéhez, új elemként és ezzel véget is ér a nagy (első) for ciklus magja.
+A függvény ekkor egy elágazást állít, ahol, meghív egy beépített függvényt, s paraméterként a character_counter listát adja meg, ami pedig a lista legnagyobb értékét adja visszatérési értékként [nem tudom, hogy mit kéne ide írnom, amikor ezt egy beépített függvény végzi el és nem én programoztam ezt az algoritmust] és amennyiben a visszatérési értéke egyenlő nullával, akkor visszatérési értékként egy üres stringet ad. 
+Ha azonban a beépített függvény visszatérési értéke nem 0, akkor meghívja mégegyszer ugyanazt a beépített függvényt, amelynek a paramétere a character_counter. 
+A visszatérési értéket pedig egy paraméterként felhasználva meghív mégegy beépített függvényt, amely visszatérési értékként a paraméterként megadott érték indexét keresi meg egy szintén paraméterként megadott lista elemei között [szintén nem tudom hogy kéne írnom]. Ezen beépített függvény visszatérési értékét (a keresett indexet) pedig ezután felhasználja, hogy, megtalálja a neki (deklarált függvény) paraméterként adott list_of_strings lista megegyező indexű elemét. Majd ezen elemet adja vissza visszatérési értékként.
