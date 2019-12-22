@@ -1,0 +1,22 @@
+1: harmadfokú egyenletet megoldása
+
+2: egy tíz számból álló tömbben ha van páros, számoljuk ki a 10 szám szorzatát, ha
+nincs közte páros szám, adjuk meg a legkisebb számot (itt baromira nem
+egyértelműek a jelölések, kérdezzetek, kísérletezzetek és majd következő háziig
+tisztázunk mindent)
+
+3: két természetes szám legkisebb közös többszörösének megtalálása
+
+4: két számhoz keresünk egyet ami a két szám összege és különbsége között van
+
+Augusztin 3: Van két számom, ha ezek összege meghaladja a 10-et, akkor számolja ki a specifikáció a
+különbségüket, ha nem haladja meg, akkor ossza el a két szám összegével.
+
+Száj 1: Választható trimeszter ceus kurzusait aszerint sorba szeretném rendezni, hogy a
+kurzustartónak hány hivatkozása van.
+
++nehéz feladat:
+adott egy tetszőleges predikátum, ami egy logikai értéket számol ki két természetes
+számból és adott hozzá két természetes szám, amire ki lehet számolni. ha van olyan
+szám amire ki lehetne cserélni valamelyiket a két szám közül, úgy hogy a predikátum
+igazságértéke változatlan maradjon, számolja ki a program ezt a számot.
