@@ -1,0 +1,10 @@
+Vig Ádám a kérdezettem:
+
+1) Mit volt nehéz, mit becsültél alá?
+Ami nehéz volt, az az elején a projekt volumenének kitalálása, a környezet amiben akarom hogy működjön?
+
+2) Volt-e valami aha élményed útközben?
+Az Endrével való konzultálás közben volt, mikor a projektről beszéltem vele, de mar túl voltunk a legelején, és közben mentem hozza. Én a technikai problémákat egész gyorsan meg tudtam oldani általában, szóval nem azzal kerestem hogy miért nem fut le a kód, hanem szinten, a gondolkodos részeknél, amikor azt kellett kitalálni, hogy hogy működjön egy részlete a projektnek.
+
+És milyen kurzuson tanult skill volt a legnagyobb segitseged?
+Algoritmikus gondolkodás. 
