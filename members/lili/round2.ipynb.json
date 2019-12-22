@@ -1,0 +1,653 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 370,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "import sys\n",
+    "sys.path.insert(0, '..')\n",
+    "from __import_file__ import danka\n",
+    "from __import_file__ import szaj\n",
+    "from __import_file__ import flora\n",
+    "from __import_file__ import petra\n",
+    "from __import_file__ import lili\n",
+    "from __import_file__ import marci\n",
+    "from __import_file__ import matos\n",
+    "from __import_file__ import kornel\n",
+    "from __import_file__ import anna"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## danka"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 371,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def danka_solution(list_of_numbers):\n",
+    "    # modify this function\n",
+    "    # return value and parameters and all\n",
+    "    asc_sorted_list = sorted(list_of_numbers)\n",
+    "    dec_sorted_list = sorted(list_of_numbers, reverse = True)\n",
+    "    \n",
+    "    first = asc_sorted_list[0] * asc_sorted_list[1]\n",
+    "    second = dec_sorted_list[0] * dec_sorted_list[1]\n",
+    "    \n",
+    "    new_list = [first, second]\n",
+    "    \n",
+    "    sorted_new_list = sorted(new_list, reverse = True)\n",
+    "    \n",
+    "    return_value = sorted_new_list[0]\n",
+    "    \n",
+    "    return return_value"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 372,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "800"
+      ]
+     },
+     "execution_count": 372,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "list = [-20, -40, 0, 1, 2, 3, 40]\n",
+    "danka_solution(list)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 373,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "- success rate: 497/497 (100.0%)\n",
+      "- error count: 0\n",
+      "- best performance: 1\n",
+      "- worst performance: 1\n",
+      "- mean performance: 1.0\n"
+     ]
+    }
+   ],
+   "source": [
+    "danka.evaluate(danka_solution)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## száj"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 374,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def szaj_solution(list_of_numbers, number):\n",
+    "    # modify this function\n",
+    "    # return value and parameters and all\n",
+    "    variable = 0\n",
+    "    sorted_list_of_numbers = sorted(list_of_numbers)\n",
+    "    \n",
+    "    for i in range(0,len(sorted_list_of_numbers) ):\n",
+    "        if ( sorted_list_of_numbers[i] / number ) % 2 == 0:\n",
+    "            variable = sorted_list_of_numbers[i]\n",
+    "            i = i + 1\n",
+    "        \n",
+    "    return variable"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 375,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "4"
+      ]
+     },
+     "execution_count": 375,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "number = 1\n",
+    "list = [0, 1, 2, 3, 4]\n",
+    "\n",
+    "szaj_solution(list, number)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 376,
+   "metadata": {
+    "scrolled": true
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "- success rate: 497/497 (100.0%)\n",
+      "- error count: 0\n",
+      "- best performance: 1\n",
+      "- worst performance: 1\n",
+      "- mean performance: 1.0\n"
+     ]
+    }
+   ],
+   "source": [
+    "szaj.evaluate(szaj_solution)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## flóra"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 391,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "\n",
+    "def flora_solution(list_of_numbers):\n",
+    "    # modify this function\n",
+    "    # return value and parameters and all\n",
+    "    \n",
+    "    list_of_good_numbers = []\n",
+    "    \n",
+    "    for number in list_of_numbers:\n",
+    "        number = str(number)\n",
+    "        good_number = True\n",
+    "        \n",
+    "        for i in range(0, len(number)-1):\n",
+    "            if not number[i] == \"-\":\n",
+    "                if  float(number[i]) > float(number[i + 1]):\n",
+    "                    good_number = False\n",
+    "                    break\n",
+    "                    \n",
+    "        if good_number:\n",
+    "                list_of_good_numbers.append(int(number))\n",
+    "    list_of_good_numbers.sort\n",
+    "    \n",
+    "    if not len(list_of_good_numbers) == 0:\n",
+    "        return max(list_of_good_numbers)\n",
+    "    else:\n",
+    "        return 0\n",
+    "   "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 392,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "- success rate: 497/497 (100.0%)\n",
+      "- error count: 0\n",
+      "- best performance: 1\n",
+      "- worst performance: 1\n",
+      "- mean performance: 1.0\n"
+     ]
+    }
+   ],
+   "source": [
+    "flora.evaluate(flora_solution)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## petra"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 398,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def petra_solution(list_of_numbers):\n",
+    "    list_of_numbers_set = set(list_of_numbers)\n",
+    "    return_list = []\n",
+    "    \n",
+    "    for number in list_of_numbers_set:\n",
+    "        if number > 0:\n",
+    "            if number % 2 != 0:\n",
+    "                return_list.append(number)\n",
+    "                \n",
+    "    sum_of_even = sum(return_list)\n",
+    "    return sum_of_even"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 399,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "lista = [-144, 221, -718, 177, -215, -134, -620, -4, 301, 100, 420, 882, 321]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 400,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "1020"
+      ]
+     },
+     "execution_count": 400,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "petra_solution(lista)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 401,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "- success rate: 497/497 (100.0%)\n",
+      "- error count: 0\n",
+      "- best performance: 1\n",
+      "- worst performance: 1\n",
+      "- mean performance: 1.0\n"
+     ]
+    }
+   ],
+   "source": [
+    "petra.evaluate(petra_solution)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## lili"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def lili_solution():\n",
+    "    # modify this function\n",
+    "    # return value and parameters and all\n",
+    "    return 0"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "lili.evaluate(lili_solution)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## marci"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 530,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def marci_solution(list_of_strings, string):\n",
+    "    \n",
+    "    character_counter = []\n",
+    "    \n",
+    "    for element in list_of_strings:\n",
+    "        letter_counter = 0\n",
+    "        \n",
+    "        for char in element:\n",
+    "            \n",
+    "            if char == string:\n",
+    "                letter_counter +=1\n",
+    "            else:\n",
+    "                letter_counter\n",
+    "                \n",
+    "        for char in element:\n",
+    "            char = char.swapcase()\n",
+    "            \n",
+    "            if char == string:\n",
+    "                letter_counter +=1\n",
+    "            else:\n",
+    "                letter_counter\n",
+    "                \n",
+    "        character_counter.append(letter_counter)\n",
+    "        \n",
+    "    if max(character_counter) == 0:\n",
+    "        return \"\" \n",
+    "    \n",
+    "    else:\n",
+    "        index = character_counter.index(max(character_counter))\n",
+    "        \n",
+    "        return list_of_strings[index]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 531,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'lala'"
+      ]
+     },
+     "execution_count": 531,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "list_of_things = ['123', 'lala', '', '', '', 'aA']\n",
+    "char = 'A'\n",
+    "marci_solution(list_of_things, char)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 532,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "- success rate: 495/495 (100.0%)\n",
+      "- error count: 0\n",
+      "- best performance: 1\n",
+      "- worst performance: 1\n",
+      "- mean performance: 1.0\n"
+     ]
+    }
+   ],
+   "source": [
+    "marci.evaluate(marci_solution)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## matos"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 502,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def matos_solution(list_of_strings):\n",
+    "    # modify this function\n",
+    "    # return value and parameters and all\n",
+    "    count_a_list = len(list_of_strings)\n",
+    "    a_in_list = []\n",
+    "    a_in_word = 0\n",
+    "    \n",
+    "    for word in list_of_strings:\n",
+    "        word = word.lower()\n",
+    "        a_in_word = 0\n",
+    "        for char in word:\n",
+    "            if char == 'a':\n",
+    "                a_in_word += 1\n",
+    "            else:\n",
+    "                a_in_word += 0\n",
+    "                \n",
+    "                \n",
+    "        a_in_list.append(a_in_word)\n",
+    "        \n",
+    "    if max(a_in_list) != 0:\n",
+    "        return a_in_list.index(max(a_in_list)) \n",
+    "    else:\n",
+    "        return -1\n",
+    "        \n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 503,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "2"
+      ]
+     },
+     "execution_count": 503,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "list_of_words = ['ba', 'babab', 'AaAaA', 'Ahha']\n",
+    "matos_solution(list_of_words)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 504,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "- success rate: 495/495 (100.0%)\n",
+      "- error count: 0\n",
+      "- best performance: 1\n",
+      "- worst performance: 1\n",
+      "- mean performance: 1.0\n"
+     ]
+    }
+   ],
+   "source": [
+    "matos.evaluate(matos_solution)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## kornél"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 168,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def kornel_solution(list_of_strings, string):\n",
+    "    # modify this function\n",
+    "    # return value and parameters and all\n",
+    "    \n",
+    "    var_result = 0\n",
+    "    \n",
+    "    for i in range(0,len(list_of_strings)):\n",
+    "        if string.casefold() in list_of_strings[i].casefold():\n",
+    "            var_result = var_result + 1\n",
+    "    i = i + 1\n",
+    "            \n",
+    "    \n",
+    "    \n",
+    "    return var_result"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 169,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "- success rate: 495/495 (100.0%)\n",
+      "- error count: 0\n",
+      "- best performance: 1\n",
+      "- worst performance: 1\n",
+      "- mean performance: 1.0\n"
+     ]
+    }
+   ],
+   "source": [
+    "kornel.evaluate(kornel_solution)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## anna"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 153,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def anna_solution(list_of_numbers, number):\n",
+    "    # modify this function\n",
+    "    # return value and parameters and all\n",
+    "    \n",
+    "    for i in range(0,len(list_of_numbers)):\n",
+    "            new_var = number - list_of_numbers[i]   \n",
+    "            if new_var % 3 == 0:\n",
+    "                solution_var = list_of_numbers[i]\n",
+    "    i = i + 1\n",
+    "    \n",
+    "    return solution_var"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 154,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "lista_var_test = [1,2,3]\n",
+    "int_var_test = 18"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 155,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "3"
+      ]
+     },
+     "execution_count": 155,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "anna_solution(lista_var_test,int_var_test)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 156,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "- success rate: 497/497 (100.0%)\n",
+      "- error count: 0\n",
+      "- best performance: 1\n",
+      "- worst performance: 1\n",
+      "- mean performance: 1.0\n"
+     ]
+    }
+   ],
+   "source": [
+    "anna.evaluate(anna_solution)"
+   ]
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.6.9"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 2
+}
