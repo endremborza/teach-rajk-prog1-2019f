@@ -1,5 +1,6 @@
 Előző héten megvalósult:
 
+- két csillagot szereztem AOC-n
 - utánanéztem a múlt heti projekt ötleteknek, eldöntöttem, hogy a Twitter scrapelős irányt választom
 - sokat kerestem, hogy hogyan kell a Twittertől engedélyt kérni a scrapeléshez
 - regisztráltam developer-ként Twitteren, bejegyeztem egy applicationt, aminek tudtam használni a scrapeléshez szükséges engedélyezési kódjait (key, secret key, token, secret token)
@@ -9,7 +10,11 @@ Előző héten megvalósult:
   
   -tweepy package-dzsel sikerült hashtag keresés alapján egy teszt scrapelést csinálni
   
-  -ezeknek a kódjai: https://rajk.uni-corvinus.hu:8888/user/rajkjupyter/tree/notebooks/prog1-2019f/teach-rajk-prog1-2019f/members/%C3%A1ron/Prog%20projekt
+Kódok:
+
+- projekt: https://rajk.uni-corvinus.hu:8888/user/rajkjupyter/tree/notebooks/prog1-2019f/teach-rajk-prog1-2019f/members/%C3%A1ron/Prog%20projekt
+
+- Advent of code: https://rajk.uni-corvinus.hu:8888/user/rajkjupyter/tree/notebooks/prog1-2019f/teach-rajk-prog1-2019f/members/%C3%A1ron/AOC%202019
   
 Használt források:
 
@@ -19,7 +24,7 @@ Használt források:
 
 Nem valósult meg:
 
-- AOC csillagoknak későn láttam neki, lassabban haladtam vele
+- AOC csillagoknak későn láttam neki, úgyhogy még csak az elején tartok
 
 Jövő hétre tervek:
 
