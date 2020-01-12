@@ -6,7 +6,9 @@
 
 ## Saját kurzusmap maker 
 
-Feltettem a mappába a kódomat. Nehéz volt áthelyezni a plotlyba a dolgot, ez okozta a legtöbb időt. Mivel más volt a struktúrája mint a networkX-nek ezért meghatározni például a traceket vagy a
+Feltettem a mappába a kódomat. 
+Link: https://rajk.uni-corvinus.hu:8888/user/rajkjupyter/notebooks/notebooks/prog1-2019f/teach-rajk-prog1-2019f/members/anna/Project.ipynb
+Nehéz volt áthelyezni a plotlyba a dolgot, ez okozta a legtöbb időt. Mivel más volt a struktúrája mint a networkX-nek ezért meghatározni például a traceket vagy a
 nodok pozícióját sok időbe telt.
 
 Adatbázis:
