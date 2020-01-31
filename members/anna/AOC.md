@@ -1,4 +1,4 @@
-Itt található a mappa benne a kódokkal:
+##Itt található a mappa benne a kódokkal:
 
 Itt pedig a dokumentáció:
 ![alt text](https://github.com/AugusztinAnna/teach-rajk-prog1-2019f/members/anna/AOC.png "Logo Title Text 1")
