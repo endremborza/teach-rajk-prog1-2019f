@@ -1,4 +1,7 @@
-##Itt található a mappa benne a kódokkal:
+### Itt található a mappa benne a kódokkal:
+https://rajk.uni-corvinus.hu:8888/user/rajkjupyter/tree/AAnna/Advent%20of%20Codes
+### Itt pedig a dokumentáció:
+![Screenshot](AOC.JPG)
+![Screenshot](AOC2.JPG)
 
-Itt pedig a dokumentáció:
-![alt text](https://github.com/AugusztinAnna/teach-rajk-prog1-2019f/members/anna/AOC.png "Logo Title Text 1")
+
